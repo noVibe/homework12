@@ -18,7 +18,7 @@ public class Main {
     }
     public static String LeapOrNot(int year){
         String result = year + " is a non-leap year";
-        if (year % 400 == 0 || (year % 100 != 0 && year % 4 == 0)) {
+        if (year % 100 == 0 ^ year % 4 == 0) {
             result = year + " is a leap year";
         }
         return result;
